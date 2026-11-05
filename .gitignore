@@ -8,6 +8,7 @@
 !/pipeline/
 !/analysis/
 !/figures/
+!/paper-figures/
 
 # inside allowed folders: no data, logs or scratch
 *.tsv

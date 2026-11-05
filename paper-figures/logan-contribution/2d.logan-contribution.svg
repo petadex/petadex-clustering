@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="252.283465pt" height="133.228346pt" viewBox="0 0 252.283465 133.228346" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-11-05T14:39:16.243506</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.10.8, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 133.228346 
+L 252.283465 133.228346 
+L 252.283465 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 62.362205 8.220472 
+L 69.732283 8.220472 
+L 69.732283 15.590551 
+L 62.362205 15.590551 
+z
+" clip-path="url(#p873d1c3774)" style="fill: #9d5e91"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 144.655512 8.220472 
+L 152.025591 8.220472 
+L 152.025591 15.590551 
+L 144.655512 15.590551 
+z
+" clip-path="url(#p873d1c3774)" style="fill: #679a79"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 62.362205 36.850394 
+L 220.990395 36.850394 
+L 220.990395 58.110236 
+L 62.362205 58.110236 
+z
+" clip-path="url(#p873d1c3774)" style="fill: #9d5e91; stroke: #ffffff; stroke-width: 0.6; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 220.990395 36.850394 
+L 238.110236 36.850394 
+L 238.110236 58.110236 
+L 220.990395 58.110236 
+z
+" clip-path="url(#p873d1c3774)" style="fill: #679a79; stroke: #ffffff; stroke-width: 0.6; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 62.362205 76.535433 
+L 83.918856 76.535433 
+L 83.918856 97.795276 
+L 62.362205 97.795276 
+z
+" clip-path="url(#p873d1c3774)" style="fill: #9d5e91; stroke: #ffffff; stroke-width: 0.6; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_7">
+    <path d="M 83.918856 76.535433 
+L 187.808712 76.535433 
+L 187.808712 97.795276 
+L 83.918856 97.795276 
+z
+" clip-path="url(#p873d1c3774)" style="fill: #679a79; stroke: #ffffff; stroke-width: 0.6; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_8">
+    <path d="M 187.808712 76.535433 
+L 238.110236 76.535433 
+L 238.110236 97.795276 
+L 187.808712 97.795276 
+z
+" clip-path="url(#p873d1c3774)" style="fill: #c1d6ca; stroke: #ffffff; stroke-width: 0.6; stroke-linejoin: miter"/>
+   </g>
+   <g id="line2d_1">
+    <path d="M 84.769249 99.779528 
+L 84.769249 102.330709 
+L 237.259843 102.330709 
+L 237.259843 99.779528 
+" clip-path="url(#p873d1c3774)" style="fill: none; stroke: #679a79; stroke-width: 0.7"/>
+   </g>
+   <g id="line2d_2">
+    <path d="M 161.014546 102.330709 
+L 161.014546 104.88189 
+" clip-path="url(#p873d1c3774)" style="fill: none; stroke: #679a79; stroke-width: 0.7; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_3">
+    <path d="M 62.362205 119.622047 
+L 238.110236 119.622047 
+" clip-path="url(#p873d1c3774)" style="fill: none; stroke: #80543f; stroke-width: 0.5; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_4">
+    <path d="M 62.362205 119.622047 
+L 62.362205 121.606299 
+" clip-path="url(#p873d1c3774)" style="fill: none; stroke: #80543f; stroke-width: 0.5; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_5">
+    <path d="M 106.299213 119.622047 
+L 106.299213 121.606299 
+" clip-path="url(#p873d1c3774)" style="fill: none; stroke: #80543f; stroke-width: 0.5; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_6">
+    <path d="M 150.23622 119.622047 
+L 150.23622 121.606299 
+" clip-path="url(#p873d1c3774)" style="fill: none; stroke: #80543f; stroke-width: 0.5; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_7">
+    <path d="M 194.173228 119.622047 
+L 194.173228 121.606299 
+" clip-path="url(#p873d1c3774)" style="fill: none; stroke: #80543f; stroke-width: 0.5; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_8">
+    <path d="M 238.110236 119.622047 
+L 238.110236 121.606299 
+" clip-path="url(#p873d1c3774)" style="fill: none; stroke: #80543f; stroke-width: 0.5; stroke-linecap: square"/>
+   </g>
+   <g id="text_1">
+    <text style="font-size: 20px; font-family: 'Ubuntu Sans', Helvetica, Arial, sans-serif; text-anchor: start; fill: #5f3928" x="2.834646" y="17.181521" transform="rotate(-0 2.834646 17.181521)">D</text>
+   </g>
+   <g id="text_2">
+    <text style="font-size: 6px; font-family: 'Ubuntu Sans', Helvetica, Arial, sans-serif; text-anchor: start; fill: #5f3928" x="72.566929" y="13.444887" transform="rotate(-0 72.566929 13.444887)">PAZy or nr superfamily</text>
+   </g>
+   <g id="text_3">
+    <text style="font-size: 6px; font-family: 'Ubuntu Sans', Helvetica, Arial, sans-serif; text-anchor: start; fill: #5f3928" x="154.860236" y="13.424262" transform="rotate(-0 154.860236 13.424262)">Logan-only superfamily</text>
+   </g>
+   <g id="text_4">
+    <text style="font-weight: 700; font-size: 7px; font-family: 'Ubuntu Sans', Helvetica, Arial, sans-serif; text-anchor: end; fill: #5f3928" x="56.692913" y="45.531604" transform="rotate(-0 56.692913 45.531604)">Logan proteins</text>
+   </g>
+   <g id="text_5">
+    <text style="font-size: 6px; font-family: 'Ubuntu Sans', Helvetica, Arial, sans-serif; text-anchor: end; fill: #80543f" x="56.692913" y="53.825931" transform="rotate(-0 56.692913 53.825931)">n = 292M</text>
+   </g>
+   <g id="text_6">
+    <text style="font-weight: 700; font-size: 6px; font-family: 'Ubuntu Sans', Helvetica, Arial, sans-serif; fill: #ffffff" transform="translate(123.1663 45.963159)">263.5M · 90%</text>
+    <text style="font-weight: 700; font-size: 6px; font-family: 'Ubuntu Sans', Helvetica, Arial, sans-serif; fill: #ffffff" transform="translate(103.164737 52.015284)">join a PAZy or nr superfamily</text>
+   </g>
+   <g id="text_7">
+    <text style="font-weight: 700; font-size: 6px; font-family: 'Ubuntu Sans', Helvetica, Arial, sans-serif; text-anchor: middle; fill: #ffffff" x="229.550315" y="49.007034" transform="rotate(-0 229.550315 49.007034)">10%</text>
+   </g>
+   <g id="text_8">
+    <text style="font-weight: 700; font-size: 6px; font-family: 'Ubuntu Sans', Helvetica, Arial, sans-serif; text-anchor: end; fill: #679a79" x="238.110236" y="32.688248" transform="rotate(-0 238.110236 32.688248)">28.4M form Logan-only superfamilies</text>
+   </g>
+   <g id="text_9">
+    <text style="font-weight: 700; font-size: 7px; font-family: 'Ubuntu Sans', Helvetica, Arial, sans-serif; text-anchor: end; fill: #5f3928" x="56.692913" y="85.329846" transform="rotate(-0 56.692913 85.329846)">Superfamilies</text>
+   </g>
+   <g id="text_10">
+    <text style="font-size: 6px; font-family: 'Ubuntu Sans', Helvetica, Arial, sans-serif; text-anchor: end; fill: #80543f" x="56.692913" y="93.510971" transform="rotate(-0 56.692913 93.510971)">n = 65.8k</text>
+   </g>
+   <g id="text_11">
+    <text style="font-weight: 700; font-size: 6px; font-family: 'Ubuntu Sans', Helvetica, Arial, sans-serif; text-anchor: middle; fill: #ffffff" x="73.14053" y="88.692073" transform="rotate(-0 73.14053 88.692073)">8.1k</text>
+   </g>
+   <g id="text_12">
+    <text style="font-weight: 700; font-size: 6px; font-family: 'Ubuntu Sans', Helvetica, Arial, sans-serif; text-anchor: middle; fill: #ffffff" x="135.863784" y="88.692073" transform="rotate(-0 135.863784 88.692073)">38.9k</text>
+   </g>
+   <g id="text_13">
+    <text style="font-weight: 700; font-size: 6px; font-family: 'Ubuntu Sans', Helvetica, Arial, sans-serif; fill: #5f3928" transform="translate(205.621193 85.648198)">18.8k</text>
+    <text style="font-weight: 700; font-size: 6px; font-family: 'Ubuntu Sans', Helvetica, Arial, sans-serif; fill: #5f3928" transform="translate(199.287443 91.700323)">one family</text>
+   </g>
+   <g id="text_14">
+    <text style="font-weight: 700; font-size: 6.5px; font-family: 'Ubuntu Sans', Helvetica, Arial, sans-serif; text-anchor: middle; fill: #679a79" x="161.014546" y="111.605048" transform="rotate(-0 161.014546 111.605048)">+57.7k from Logan  (8.2× PAZy + nr alone)</text>
+   </g>
+   <g id="text_15">
+    <text style="font-size: 5.5px; font-family: 'Ubuntu Sans', Helvetica, Arial, sans-serif; text-anchor: middle; fill: #80543f" x="62.362205" y="126.685548" transform="rotate(-0 62.362205 126.685548)">0%</text>
+   </g>
+   <g id="text_16">
+    <text style="font-size: 5.5px; font-family: 'Ubuntu Sans', Helvetica, Arial, sans-serif; text-anchor: middle; fill: #80543f" x="106.299213" y="126.685548" transform="rotate(-0 106.299213 126.685548)">25%</text>
+   </g>
+   <g id="text_17">
+    <text style="font-size: 5.5px; font-family: 'Ubuntu Sans', Helvetica, Arial, sans-serif; text-anchor: middle; fill: #80543f" x="150.23622" y="126.685548" transform="rotate(-0 150.23622 126.685548)">50%</text>
+   </g>
+   <g id="text_18">
+    <text style="font-size: 5.5px; font-family: 'Ubuntu Sans', Helvetica, Arial, sans-serif; text-anchor: middle; fill: #80543f" x="194.173228" y="126.685548" transform="rotate(-0 194.173228 126.685548)">75%</text>
+   </g>
+   <g id="text_19">
+    <text style="font-size: 5.5px; font-family: 'Ubuntu Sans', Helvetica, Arial, sans-serif; text-anchor: middle; fill: #80543f" x="238.110236" y="126.685548" transform="rotate(-0 238.110236 126.685548)">100%</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p873d1c3774">
+   <rect x="0" y="0" width="252.283465" height="133.228346"/>
+  </clipPath>
+ </defs>
+</svg>
