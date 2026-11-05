@@ -1,0 +1,25 @@
+# Whitelist: ignore everything, then allow only the narrative, code and final figures.
+# Data (data/, run2/, archive/) must never be committed.
+/*
+!/.gitignore
+!/README.md
+!/petadex_clustering_experiment.ipynb
+!/docs/
+!/pipeline/
+!/analysis/
+!/figures/
+
+# inside allowed folders: no data, logs or scratch
+*.tsv
+!/pipeline/configs/component_domain.tsv
+!/pipeline/configs/deviations.tsv
+*.log
+*.done
+*.parquet
+*.faa
+*.fa
+*.fasta
+*.dmnd
+tmp/
+__pycache__/
+.ipynb_checkpoints/

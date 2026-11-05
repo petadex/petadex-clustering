@@ -1,0 +1,42 @@
+#!/bin/bash
+# Pass-through to DIAMOND 2.2.4. Only two changes vs Benjamin's environment:
+#  - thread count from $DIAMOND_THREADS (his scripts rely on DIAMOND's default = all cores)
+#  - `-M 2000G` (his machine) capped at $DIAMOND_MEM, since watson has 754 GB
+# Run 2 ops: $DIAMOND_OOM_ADJ (if set) makes this DIAMOND process a preferred OOM-killer victim. Set on the small pool
+# only, so an OOM takes one small step rather than a heavy step or the launcher/xargs (2026-10-27 relaunch 4).
+# Run 2 drain (2026-10-27): while run2/DRAIN exists, a new DIAMOND run waits here instead of starting, so work in
+# flight finishes and nothing new begins; stop_run2.sh can then kill the run without losing finished steps or chunks.
+while [[ -e /watson/rnalab/dzhu/petadex-clustering/run2/DRAIN ]]; do sleep 30; done
+# Run 2 /dev/shm gate (2026-10-29): a Logan back-map chunk (-t /dev/shm) creates temp files there within minutes of
+# starting (~33 GB for amidase-signature), and 12 starting at once filled the 378 GB tmpfs in seconds (chunks fail "No
+# space left on device"). So a chunk starts only $SHM_GAP s after the previous start AND with > need GB free: 80 for
+# amidase, 30 for the others. A waiting chunk re-checks every 30 s without holding the lock, so a small chunk is not
+# stuck behind an amidase one (13:55 fix: betalactamase waited 9 h behind amidase). Threads for chunks started now:
+# logs/.chunk_threads, if set (idle cores after Thomas's work ended).
+# Disk fallback (14:25): if logs/.chunk_disk_tmp names a directory, a chunk that finds no /dev/shm room (after the
+# gap) runs with its temp files there instead of waiting. Temp location only; what is computed is unchanged.
+if [[ " $* " == *" -t /dev/shm "* ]]; then
+  G=/watson/rnalab/dzhu/petadex-clustering/run2/logs/.shm_start
+  need=${SHM_START_MIN:-80}; [[ " $* " == *" split-amidase-signature/"* ]] || need=30
+  while :; do
+    exec 8>>$G.lock2; flock 8
+    last=$(cat $G.last 2>/dev/null || echo 0)
+    if (( $(date +%s) >= last + ${SHM_GAP:-300} )) && (( $(df -BG --output=avail /dev/shm | tail -1 | tr -dc 0-9) > need )); then
+      date +%s > $G.last; flock -u 8; exec 8>&-; break
+    fi
+    dt=$(cat ${G%/*}/.chunk_disk_tmp 2>/dev/null)
+    if [[ -n $dt && -d $dt ]] && (( $(date +%s) >= last + ${SHM_GAP:-300} )); then
+      tmpdir=$dt; date +%s > $G.last; flock -u 8; exec 8>&-; break
+    fi
+    flock -u 8; exec 8>&-; sleep 30
+  done
+  t=$(cat ${G%/*}/.chunk_threads 2>/dev/null); [[ $t =~ ^[0-9]+$ ]] && DIAMOND_THREADS=$t
+fi
+[[ -n $DIAMOND_OOM_ADJ ]] && echo "$DIAMOND_OOM_ADJ" > /proc/self/oom_score_adj 2>/dev/null
+args=()
+while [[ $# -gt 0 ]]; do
+  if [[ -n $tmpdir && $1 == -t && $2 == /dev/shm ]]; then args+=(-t "$tmpdir"); shift 2; continue; fi
+  if [[ $1 == -M && $2 == 2000G ]]; then args+=(-M "${DIAMOND_MEM:-500G}"); shift 2; continue; fi
+  args+=("$1"); shift
+done
+exec /watson/rnalab/dzhu/bin/diamond "${args[@]}" --threads "${DIAMOND_THREADS:-64}"
